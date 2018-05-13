@@ -1,0 +1,16 @@
+.container{
+    background: gray;
+    color: white; 
+}
+
+.column{ 
+    padding: 10px 25px;
+    border-right: 5px solid black;
+}
+
+.column header{
+    font-size: 25px;
+    font-weight: 900;
+    border-bottom: 2px solid black;
+    margin-bottom: 25px;
+}

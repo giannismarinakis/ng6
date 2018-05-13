@@ -1,0 +1,18 @@
+<div class="container" >
+    <div class="row"  [@items]="inventoryItems.length">
+        <div class="column col-6">
+            <header>Add an item</header> 
+            <form>
+                <input type="text" name="item" [(ngModel)]="itemText"> 
+                <input type="submit" [value]="submitText" (click)="addItem()"> 
+            </form>
+        </div>
+
+        <div class="column col-6">
+            <header>My inventory ({{ itemsCount }})</header>
+            <div class="items-container" *ngFor="let item of inventoryItems;let i = index" (click)="removeItem(i)">
+                {{ item }}
+            </div>
+        </div>
+    </div>
+</div> 
